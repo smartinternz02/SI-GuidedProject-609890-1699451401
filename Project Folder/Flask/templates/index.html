@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction App</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stock Prediction App</h1>
+    
+    <form action="/prediction" method="post">
+        <label for="low">Low:</label>
+        <input type="text" name="low" required>
+
+        <label for="high">High:</label>
+        <input type="text" name="high" required>
+
+        <label for="volume">Volume:</label>
+        <input type="text" name="volume" required>
+
+        <label for="open">Open:</label>
+        <input type="text" name="open" required>
+
+        <label for="company">Company:</label>
+        <input type="text" name="company" required>
+
+        <label for="year">Year:</label>
+        <input type="text" name="year" required>
+
+        <label for="month">Month:</label>
+        <input type="text" name="month" required>
+
+        <label for="day">Day:</label>
+        <input type="text" name="day" required>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
